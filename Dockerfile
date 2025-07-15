@@ -1,6 +1,5 @@
-FROM aler9/mediamtx:latest
+FROM bluenviron/mediamtx:latest
 
-# Copy config file to container root
 COPY mediamtx.yml /mediamtx.yml
 
 # Expose WebRTC HTTP port for Render
