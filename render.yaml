@@ -3,12 +3,16 @@ services:
     name: mediamtx
     env: docker
     plan: free
-    repo: https://github.com/Ndutech1/mediamtx.git  # 🔧 FIXED: must be actual repo, not YAML file
-    dockerContext: .
+    repo: https://github.com/Ndutech1/mediamtx.git
+    branch: main
     dockerfilePath: Dockerfile
+    dockerContext: .
     autoDeploy: true
     envVars:
       - key: MTX_CONF
-        value: /mediamtx.yml  # 🔧 use absolute path (Render runs root inside container)
+        value: /mediamtx.yml
     ports:
-      - 8889  # ✅ WebRTC HTTP port
+      - 8554
+      - 1935
+      - 8888
+      - 8889
