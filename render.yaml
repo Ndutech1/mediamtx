@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mediamtx
+    env: docker
+    plan: free
+    repo: https://github.com/Ndutech1/mediamtx.yml.git
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ./mediamtx
+    autoDeploy: true
+    envVars:
+      - key: MTX_CONF
+        value: ./mediamtx.yml
