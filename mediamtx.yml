@@ -23,7 +23,7 @@ srtAddress: :8890
 
 # Path configurations
 paths:
-  live:
+  live
     source: publisher
     runOnDemand: no
 
