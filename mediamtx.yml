@@ -1,6 +1,5 @@
 logLevel: info
 
-# Enable protocols
 rtsp: yes
 rtspAddress: :8554
 
@@ -21,7 +20,6 @@ webrtcAddress: :8889
 srt: yes
 srtAddress: :8890
 
-# Path configurations
 paths:
   live:
     source: publisher
