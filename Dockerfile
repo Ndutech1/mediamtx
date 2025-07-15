@@ -6,4 +6,4 @@ COPY mediamtx.yml /mediamtx.yml
 EXPOSE 8889
 
 ENTRYPOINT ["/init"]
-CMD []
+CMD ["/mediamtx"]
