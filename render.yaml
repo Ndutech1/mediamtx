@@ -11,8 +11,4 @@ services:
     envVars:
       - key: MTX_CONF
         value: /mediamtx.yml
-    ports:
-      - 8554
-      - 1935
-      - 8888
-      - 8889
+    
